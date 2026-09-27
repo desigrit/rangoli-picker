@@ -1,4 +1,4 @@
-# <img src="docs/images/rangoli-icon.png" alt="" width="32" height="32" align="absmiddle"> Rangoli
+# <img src="docs/images/rangoli-icon.png" alt="" width="40" height="50" align="absmiddle"> Rangoli
 
 **Pick a color anywhere on your Mac.** Rangoli lives in the menu bar and copies the color under your cursor in one click.
 
