@@ -20,8 +20,8 @@ The Settings popover keeps the two things you may want to change close at hand: 
 
 - Open Rangoli or press **Control–Option–C**. Move over any pixel; left click to copy its code and close.
 - Switch between Hex, RGB, HSL, HSV, CMYK, and Lab from the small bar at the top of the primary display. Rangoli remembers your last choice.
-- See a swatch, the current code, and the nearest name from the [CSS named-color list](https://www.w3.org/TR/css-color-4/#named-colors) next to your cursor.
-- Right click, press Esc, click X, or press the shortcut again.
+- See a swatch, the current code, and the nearest name from the [CSS named-color list](https://www.w3.org/TR/css-color-4/#named-colors) next to your cursor. Click to copy to your clipboard.
+- To exit, right click, press Esc, click X, or press the shortcut again.
 
 ## Download and install
 
@@ -40,7 +40,6 @@ Move the app to its final location before granting screen access or enabling Lau
 - Rangoli samples at native display resolution and converts the result to sRGB before formatting it.
 - Color names are the nearest of the 148 opaque CSS named colors. They are descriptive approximations, not exact matches for every screen color.
 - CMYK is an approximation of an sRGB screen color; it is not a print profile conversion. Lab uses a D50 white point.
-- The pixelated **Radiant Star** icon has a matching monochrome menu bar version.
 
 ## Build from source
 
