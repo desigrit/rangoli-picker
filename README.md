@@ -18,13 +18,10 @@ The Settings popover keeps the two things you may want to change close at hand: 
 
 ## What it does
 
-- **One-click picking.** Open Rangoli or press **Control–Option–C**. Move over any pixel; left click to copy its code and close.
-- **Six formats.** Switch between Hex, RGB, HSL, HSV, CMYK, and Lab from the small bar at the top of the primary display. Rangoli remembers your last choice.
-- **A useful preview.** See a swatch, the current code, and the nearest name from the [CSS named-color list](https://www.w3.org/TR/css-color-4/#named-colors) next to your cursor.
-- **Easy cancellation.** Right click, press Esc, click X, or press the shortcut again.
-- **Menu bar home.** Use **Pick**, **Settings**, or **Quit Rangoli** from the menu bar. Launch at Login is optional.
-
-Rangoli has no Dock icon or standard app window. Opening it normally starts a pick; a login launch starts quietly in the menu bar.
+- Open Rangoli or press **Control–Option–C**. Move over any pixel; left click to copy its code and close.
+- Switch between Hex, RGB, HSL, HSV, CMYK, and Lab from the small bar at the top of the primary display. Rangoli remembers your last choice.
+- See a swatch, the current code, and the nearest name from the [CSS named-color list](https://www.w3.org/TR/css-color-4/#named-colors) next to your cursor.
+- Right click, press Esc, click X, or press the shortcut again.
 
 ## Build and run
 
