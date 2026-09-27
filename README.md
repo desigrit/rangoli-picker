@@ -29,8 +29,8 @@ The Settings popover keeps the two things you may want to change close at hand: 
 
 [Download Rangoli for Mac](https://github.com/desigrit/rangoli-picker/releases/latest/download/Rangoli-macOS-arm64.zip) · [View the latest release](https://github.com/desigrit/rangoli-picker/releases/latest) · [SHA-256 checksum](https://github.com/desigrit/rangoli-picker/releases/latest/download/SHA256SUMS.txt)
 
-1. Unzip the download and move `Rangoli.app` to **Applications**.
-2. Open Rangoli. This build is signed locally but not notarized, so macOS may block it on first launch. After that first attempt, open **System Settings → Privacy & Security**, find Rangoli near the bottom, and choose **Open Anyway**. [Apple explains this step here](https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unknown-developer-mh40616/mac).
+1. Unzip the download and move `Rangoli.app` to **Applications**, or double click Rangoli.
+2. MacOS may block it on first launch. After that first attempt, open **System Settings → Privacy & Security**, find Rangoli near the bottom, and choose **Open Anyway**. [Apple explains this step here](https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unknown-developer-mh40616/mac).
 3. Allow **Screen & System Audio Recording** when macOS asks. Rangoli needs it to read the pixel under your cursor while picking. If picking still cannot start, quit and reopen the app, then choose **Pick** from its menu bar icon.
 
 Move the app to its final location before granting screen access or enabling Launch at Login. Opening Rangoli starts the picker; once you dismiss it, Rangoli stays in the menu bar for your shortcut.
