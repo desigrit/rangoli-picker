@@ -23,20 +23,17 @@ The Settings popover keeps the two things you may want to change close at hand: 
 - See a swatch, the current code, and the nearest name from the [CSS named-color list](https://www.w3.org/TR/css-color-4/#named-colors) next to your cursor.
 - Right click, press Esc, click X, or press the shortcut again.
 
-## Build and run
+## Download and install
 
-Rangoli requires **macOS 14 or later**. It is written in Swift and AppKit, has no third-party dependencies, and builds with Swift Package Manager and the Apple Command Line Tools. A prebuilt download is not available yet.
+**macOS 14 or later · Apple Silicon (M1 or newer)**
 
-```sh
-git clone https://github.com/desigrit/rangoli-picker.git
-cd rangoli-picker
-zsh Scripts/build-app.sh
-open dist/Rangoli.app
-```
+[Download Rangoli for Mac](https://github.com/desigrit/rangoli-picker/releases/latest/download/Rangoli-macOS-arm64.zip) · [View the latest release](https://github.com/desigrit/rangoli-picker/releases/latest) · [SHA-256 checksum](https://github.com/desigrit/rangoli-picker/releases/latest/download/SHA256SUMS.txt)
 
-On the first pick, allow **Screen & System Audio Recording** in macOS System Settings. Rangoli uses ScreenCaptureKit to sample the visible pixel under the cursor while the picker is open. It excludes its own interface from capture, and stops capture and pointer polling when you dismiss it. If macOS still blocks picking after you grant access, quit and reopen Rangoli, then choose **Pick** from the menu bar.
+1. Unzip the download and move `Rangoli.app` to **Applications**.
+2. Open Rangoli. This build is signed locally but not notarized, so macOS may block it on first launch. After that first attempt, open **System Settings → Privacy & Security**, find Rangoli near the bottom, and choose **Open Anyway**. [Apple explains this step here](https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unknown-developer-mh40616/mac).
+3. Allow **Screen & System Audio Recording** when macOS asks. Rangoli needs it to read the pixel under your cursor while picking. If picking still cannot start, quit and reopen the app, then choose **Pick** from its menu bar icon.
 
-If you plan to keep the app in `/Applications`, move it there **before** granting screen access or enabling Launch at Login. Rebuilding with the default ad hoc signature may require you to refresh the macOS permission. You can supply a stable signing identity with `RANG_CODESIGN_IDENTITY` when building.
+Move the app to its final location before granting screen access or enabling Launch at Login. Opening Rangoli starts the picker; once you dismiss it, Rangoli stays in the menu bar for your shortcut.
 
 ## A few details
 
@@ -45,9 +42,11 @@ If you plan to keep the app in `/Applications`, move it there **before** grantin
 - CMYK is an approximation of an sRGB screen color; it is not a print profile conversion. Lab uses a D50 white point.
 - The pixelated **Radiant Star** icon has a matching monochrome menu bar version.
 
-## Checking the build
+## Build from source
 
-`Scripts/build-app.sh` runs the color and coordinate checks before packaging `dist/Rangoli.app`. After granting screen access, you can run the live sampling check:
+Rangoli is written in Swift and AppKit with no third-party dependencies. With the Apple Command Line Tools installed, run `zsh Scripts/build-app.sh` from this repository to produce `dist/Rangoli.app`. The script runs color and coordinate checks before packaging. A local rebuild changes the default ad hoc signature, so macOS may ask you to refresh screen access. You can supply a stable signing identity with `RANG_CODESIGN_IDENTITY`.
+
+After granting screen access, you can run the live sampling check:
 
 ```sh
 dist/Rangoli.app/Contents/MacOS/Rangoli --check-sampling .build/sampling-check.json
