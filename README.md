@@ -10,15 +10,13 @@ I loved the beautiful, effortless feel of the Windows color picker and wanted th
 
 ![Illustrative desktop mockup of Rangoli sampling blue beside a polar bear peeping through Arctic ice](docs/images/peeping-polar-bear-mockup.png)
 
-*An illustrative desktop mockup inspired by [the polar bear image you shared](https://www.threads.com/@the.independent/post/Dci_4o9Drpk/media), “Icy Window” by Audun Rikardsen. It is a generated scene, not the original photograph. The picker UI below is rendered from the app itself.*
+*An illustrative desktop mockup inspired by “Icy Window” by Audun Rikardsen.*
 
 ## A closer look
 
 | Pick your format | See the color before you copy |
 |:---:|:---:|
-| ![Rangoli's compact format selector, showing HEX and a close button](docs/images/format-bar.png) | ![Rangoli's live preview, showing a swatch, hex code, and nearest color name](docs/images/color-preview.png) |
-
-![Rangoli Settings with a shortcut recorder and Launch at login switch](docs/images/settings.png)
+| ![Rangoli's compact format selector, showing HEX and a close button](docs/images/format-bar.png) | ![Rangoli's live preview, showing a swatch, hex code, and nearest color name](docs/images/color-preview.png)
 
 The Settings popover keeps the two things you may want to change close at hand: your shortcut and whether Rangoli starts at login.
 
