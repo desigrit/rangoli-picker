@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+    <key>CFBundleDevelopmentRegion</key><string>en</string>
+    <key>CFBundleExecutable</key><string>Rangoli</string>
+    <key>CFBundleIdentifier</key><string>com.rang.colorpicker</string>
+    <key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
+    <key>CFBundleName</key><string>Rangoli</string>
+    <key>CFBundleDisplayName</key><string>Rangoli</string>
+    <key>CFBundleIconFile</key><string>Rangoli</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>1.0</string>
+    <key>CFBundleVersion</key><string>5</string>
+    <key>LSMinimumSystemVersion</key><string>14.0</string>
+    <key>LSUIElement</key><true/>
+    <key>NSHighResolutionCapable</key><true/>
+    <key>NSHumanReadableCopyright</key><string>Copyright 2026 Rangoli</string>
+    <key>NSScreenCaptureUsageDescription</key>
+    <string>Rangoli reads the pixel beneath the pointer while you use the color picker.</string>
+</dict></plist>
