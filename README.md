@@ -37,8 +37,8 @@ Rangoli has no Dock icon or standard app window. Opening it normally starts a pi
 Rangoli requires **macOS 14 or later**. It is written in Swift and AppKit, has no third-party dependencies, and builds with Swift Package Manager and the Apple Command Line Tools. A prebuilt download is not available yet.
 
 ```sh
-git clone https://github.com/desigrit/rangoli-color-macos.git
-cd rangoli-color-macos
+git clone https://github.com/desigrit/rangoli-picker.git
+cd rangoli-picker
 zsh Scripts/build-app.sh
 open dist/Rangoli.app
 ```
